@@ -1,0 +1,24 @@
+<table>
+  <p>Parent to Child using ngOnChanges() : </p>{{ childVar }}
+  <p>Parent to Child using Get Set : </p>{{ childVar1 }}
+    <tr>
+      <th>Accessories</th>
+      <th>Price</th>
+      <th>Buy</th>
+    </tr>
+    <tr #tr1>
+      <td>Charger</td>
+      <td #td1>10000</td>
+      <td><button (click)='action(td1)'>Buy</button></td>
+    </tr>
+    <tr #tr2>
+      <td>Cable</td>
+      <td #td2>10000</td>
+      <td><button (click)='action(td2)'>Buy</button></td>
+    </tr>
+    <tr #tr3>
+      <td>Pen</td>
+      <td #td3>10000</td>
+      <td><button (click)='action(td3)'>Buy</button></td>
+    </tr>
+  </table>
