@@ -1,0 +1,54 @@
+<h4>PARENT COMPONENT Example</h4>
+Cart Total : {{ sum }}
+<h1>Brand : Samsung </h1>
+<table>
+    <tr>
+      <th>Model</th>
+      <th>Range</th>
+      <th>Price</th>
+      <th>Buy</th>
+    </tr>
+    <tr>
+      <td>Samsung 1</td>
+      <td>Mid Range</td>
+      <td>10000</td>
+      <td><button (click)='action()'>Buy</button></td>
+    </tr>
+    <tr>
+      <td>Samsung 2</td>
+      <td>Mid Range</td>
+      <td>10000</td>
+      <td><button (click)='action()'>Buy</button></td>
+    </tr>
+    <tr>
+      <td>Samsung 3</td>
+      <td>Mid Range</td>
+      <td>10000</td>
+      <td><button (click)='action()'>Buy</button></td>
+    </tr>
+    <tr>
+      <td>Samsung 4</td>
+      <td>Mid Range</td>
+      <td>10000</td>
+      <td><button (click)='action()'>Buy</button></td>
+    </tr>
+    <tr>
+      <td>Samsung 5</td>
+      <td>Mid Range</td>
+      <td>10000</td>
+      <td><button (click)='action()'>Buy</button></td>
+    </tr>
+    <tr>
+      <td>Samsung 6</td>
+      <td>Mid Range</td>
+      <td>10000</td>
+      <td><button (click)='action()'>Buy</button></td>
+    </tr>
+  </table>
+  
+  <h1>Add Accessories<button (click)='addOn()'>Add On</button></h1>
+  <div *ngIf="addOnItem">
+    <h4>CHILD COMPONENT Example</h4>
+    <app-accessories (newItemEvent)="addItem($event)" [parentToChild]="parentVariable" 
+    [parentToChild1]="parentVariable1"></app-accessories>
+  </div>
